@@ -176,7 +176,7 @@
 }
 
 .support-image {
-  background-image: url(/img/support.jpg);
+  background-image: url(/img/support/support.jpg);
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
@@ -187,12 +187,12 @@
 
 @media screen and (min-width: 768px) {
   .support-image {
-    max-width: 249px;
-    height: 50px;
+    max-width: 704px;
+    height: 428px;
   }
 }
 @media (min-resolution: 2x) {
   .support-image {
-    background-image: url(/img/support@2x.jpg);
+    background-image: url(/img/support/support@2x.jpg);
   }
 }
