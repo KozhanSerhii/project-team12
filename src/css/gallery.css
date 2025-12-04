@@ -93,14 +93,18 @@
         height: 865px;
     }
 
-    .gallery-list-item:nth-child(3) {
-        left: 446px;
-        bottom: 0;
-    }
-
     .gallery-list-item:first-child {
         left: 0;
-        bottom: 0;
+        right: unset;
+    }
+
+    .gallery-list-item:nth-child(3) {
+        left: unset;
+        right: 0;
+    }
+
+    .gallery-list-item:nth-child(2) {
+        right: 446px;
     }
 
 }
