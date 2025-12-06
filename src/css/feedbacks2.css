@@ -1,0 +1,87 @@
+/* СЕКЦІЯ */
+.feedbacks-section {
+    background-color: #EBF8ED;
+    max-width: 1440px;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* КОНТЕЙНЕР */
+.feedbacks-container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+/* ЗАГОЛОВОК */
+.feedbacks-name-block {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030A06;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 80px;
+}
+
+/* СПИСОК КАРТОК */
+.feedbacks-client-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* ОДИН КЛІЄНТ (li) */
+.feedbacks-item {
+    width: calc((100% - 72px) / 4);
+}
+
+/* КАРТКА ВСЕРЕДИНІ */
+.feedbacks-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* ЗІРКИ */
+.feedbacks-star-list {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.star-icon {
+    fill: #3AC04C;
+}
+
+.star-icon-without-color {
+    stroke: #3AC04C;
+    fill: #EBF8ED;
+    stroke-width: 2px;
+}
+
+/* ТЕКСТ ВІДГУКУ */
+.feedbacks-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #030A06;
+    margin: 0 0 24px 0;
+    flex-grow: 1;
+}
+
+/* АВТОР */
+.feedbacks-author {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #030A06;
+    margin: 0;
+}
