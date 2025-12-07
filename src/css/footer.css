@@ -40,8 +40,11 @@ body {
 /* логотип */
 .footer-logo__img {
   display: block;
-  height: 72px;
+  height: 70px;   
+  width: auto;
+  fill: #111827;  
 }
+
 
 /* меню – стовпчиком */
 .footer-nav__list {
