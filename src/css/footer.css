@@ -1,50 +1,45 @@
 /* ========= FOOTER: MOBILE-FIRST ========= */
-.footer {
-  width: 100%;
-}
 
 .footer {
-  background-color: #66c46b; 
-  color: #111827;
-  font-size: 14px;
-  padding: 48px 0;          
+  width: 100%;
+  background-color: #75D281;
+  padding: 48px 0;
 }
 
 .footer__inner {
   max-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;          
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 48px;                
+  gap: 48px;
 }
 
 /* ===== CONTENT (лого + меню + соцмережі) – mobile ===== */
+
 .footer__content {
   width: 100%;
-  padding: 16px;            
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: 48px;
 }
 
 /* логотип */
+
+.footer-logo {
+  display: inline-block;
+}
+
 .footer-logo__img {
   display: block;
-  height: 70px;   
+  height: 36px;  
   width: auto;
-  fill: #111827;  
 }
-
 
 /* меню – стовпчиком */
-.footer-nav__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
 .footer-nav__list,
 .footer-socials {
@@ -53,49 +48,51 @@
   padding: 0;
 }
 
-
-.footer-nav__link {
-  font-size: 14px;
-  font-weight: 500;
-  color: #111827;
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .footer-nav__link {
-  text-decoration: none;      
-  color: #111827;
+  text-decoration: none;
   font-weight: 500;
+  color: inherit;
 }
 
 .footer-nav__link:hover,
 .footer-nav__link:focus {
-  text-decoration: none;      
-  opacity: 0.8;               
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 /* соцмережі */
+
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  align-items: center;
+  gap: 24px;
 }
 
 .footer-socials__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: inherit;
 }
 
 .footer-socials__icon {
-  width: 18px;
-  height: 18px;
-  fill: #111827;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 /* ===== CREDITS (лінія + контакти + копірайт) – mobile ===== */
 
 .footer__credits {
   width: 100%;
-  padding: 16px;          
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,48 +101,52 @@
 }
 
 /* лінія */
+
 .footer__divider {
   width: 100%;
+  max-width: none;   
+  margin: 0;         
   height: 1px;
   background-color: rgba(0, 0, 0, 0.15);
 }
+
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 40px;
+  font-size: 14px;
 }
 
 .footer-contacts__link {
-  font-size: 14px;
-  color: #111827;          
-  text-decoration: none;   
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-contacts__link:hover,
 .footer-contacts__link:focus {
-  opacity: 0.8;            
+  opacity: 0.8;
 }
 
-
 /* копірайт */
+
 .footer-copy {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
 }
 
-/* ========= TABLET ≥768px (макет 768px: p 64/32, gap 24) ========= */
+/* ========= TABLET ≥768px ========= */
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 64px 0;        
+    padding: 64px 0;
   }
 
   .footer__inner {
-    max-width: 768px;       
-    padding: 0 32px;        
-    gap: 24px;              
+    max-width: 768px;
+    padding: 0 32px;
+    gap: 24px;
   }
 
   .footer__content {
@@ -153,14 +154,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 24px;
   }
 
-  .footer-logo__img {
-    height: 56px;           /* планшетний логотип трохи менший */
-  }
-
-  /* меню в ряд, як на макеті */
   .footer-nav__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -172,7 +168,6 @@
     justify-content: center;
   }
 
-  /* credits: контакти вже в ряд */
   .footer__credits {
     padding: 16px;
     gap: 16px;
@@ -185,42 +180,62 @@
   }
 }
 
-/* ========= DESKTOP ≥1158px (макет: p 80/64, gap 52) ========= */
-
+/* ========= DESKTOP ≥1158px ========= */
 @media screen and (min-width: 1158px) {
   .footer {
-    padding: 80px 0;        /* top/bottom 80px */
+    padding: 80px 0;
   }
 
   .footer__inner {
-    max-width: 1158px;      
-    padding: 0 64px;        
-    gap: 52px;              
+-   max-width: 1158px;
++   max-width: 1312px;   /* як у макеті: 1440 - 2*64 */
+    padding: 0 64px;
+    gap: 52px;
   }
 
-  /* CONTENT: лого зліва, меню по центру, соцмережі справа */
   .footer__content {
-    flex-direction: row;
+    display: flex;
     align-items: center;
+-   justify-content: center;
++   justify-content: space-between;  /* три блоки: лого — меню — соцмережі */
     text-align: left;
-    gap: 32px;
+    gap: 24px;
+    padding: 0;
+    height: 80px;
   }
 
+  /* ЛОГО-БЛОК: така ж ширина, як у Figma (Logo frame 341px) */
+  .footer-logo {
+-   flex-shrink: 0;
+-   margin-right: auto;
++   flex: 0 0 341px;          /* фіксована ширина блоку */
++   display: flex;
++   align-items: center;
+  }
+
+  /* МЕНЮ – по центру між лого та соцмережами */
   .footer-nav {
-    flex: 1;
+-   /* більше не тягнемо на всю ширину */
++   flex: 0 1 auto;
++   display: flex;
++   justify-content: center;
   }
 
   .footer-nav__list {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
   }
 
+  /* БЛОК СОЦМЕРЕЖ – теж 341px, щоб симетрія з логотипом */
   .footer-socials {
-    justify-content: flex-end;
+-   margin-left: auto;
+-   justify-content: flex-end;
++   flex: 0 0 341px;
++   justify-content: flex-end;   /* іконки притиснуті вправо всередині блоку */
   }
 
-  /* CREDITS: контакти в ряд, як у десктопному макеті */
   .footer__credits {
     align-items: center;
     text-align: center;
@@ -233,43 +248,5 @@
   }
 }
 
-  .footer-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;               /* як в макеті */
-  }
 
-  .footer-socials {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-  }
 
-  /* CREDITS */
-  .footer__credits {
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-  }
-
-  .footer__divider {
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.15);
-  }
-
-  .footer-contacts {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .footer-copy {
-    font-size: 12px;
-    margin: 0;
-  }
