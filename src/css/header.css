@@ -59,6 +59,10 @@
   text-decoration: none;
   color: inherit;
 }
+address,
+address a {
+  font-style: normal;
+}
 
 /* BURGER BUTTON */
 .burger-btn {
@@ -73,11 +77,13 @@
     max-height: 64px;
   }
   .logo-header {
-    margin-left: 20px;
+    margin-left: 4px;
+    width: 84px;
+    height: 36px;
   }
   .logo-header-mobile-menu {
-    max-width: 106px;
-    max-height: 45px;
+    width: 84px;
+    height: 36px;
   }
   .burger-btn {
     margin-right: 16px;
@@ -95,9 +101,7 @@
   .navbar-container {
     height: 64px;
   }
-  .logo-header {
-    margin-left: 32px;
-  }
+
   .burger-btn {
     margin-right: 28px;
   }
@@ -107,9 +111,15 @@
   .nav-link-list {
     display: flex;
   }
+  .logo-header {
+    margin-left: 4px;
+    width: 106px;
+    height: 45px;
+  }
 
   .contacts-header-list {
     display: flex;
+    margin-right: 0;
   }
 
   .burger-btn {
