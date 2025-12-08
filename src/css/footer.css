@@ -13,7 +13,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;                   /* відстань між content та credits */
+  gap: 36px;                   /* відстань між content та credits */
 }
 
 /* ===== CONTENT (лого + меню + соцмережі) – mobile ===== */
@@ -101,6 +101,15 @@
   height: 1px;
   background-color: rgba(0, 0, 0, 0.15);
 }
+.footer__inner {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;         
+}
+
 
 .footer-contacts {
   display: flex;
@@ -206,8 +215,7 @@
   }
 
   .footer__credits {
-    padding-top: 0;         
-    padding-bottom: 16px;   
+    padding: 0 0 16px;  
     gap: 12px;   
     align-items: center;
     text-align: center;
