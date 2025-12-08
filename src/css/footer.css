@@ -210,6 +210,10 @@
   .footer-socials {
     justify-content: flex-end;
   }
+  .footer-socials__icon {
+    width: 24px;
+    height: 24px;
+  }
 
   .footer__credits {
     padding: 0 0 16px;  
