@@ -2,8 +2,9 @@
 
 .footer {
   width: 100%;
-  background-color: #75D281;
-  padding: 48px 0;
+  background-color: #75D281;   /* колір з макета */
+  padding: 48px 0;             /* mobile: 48 top/bottom */
+  /* color та font-size НЕ задаємо – вони з базових стилів */
 }
 
 .footer__inner {
@@ -12,7 +13,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 48px;                   /* відстань між content та credits */
 }
 
 /* ===== CONTENT (лого + меню + соцмережі) – mobile ===== */
@@ -24,23 +25,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 48px;
+  gap: 48px;                   /* тімлід просив 48px */
 }
 
-/* логотип */
-
-.footer-logo {
-  display: inline-block;
-}
-
+/* логотип — розмір з макета (можеш підкоригувати по Figma) */
 .footer-logo__img {
   display: block;
-  height: 36px;  
-  width: auto;
+  width: 148px;                /* постав точне значення з Figma */
+  height: auto;
 }
 
 /* меню – стовпчиком */
-
 .footer-nav__list,
 .footer-socials {
   list-style: none;
@@ -57,6 +52,7 @@
 .footer-nav__link {
   text-decoration: none;
   font-weight: 500;
+  /* колір беремо з базових стилів: */
   color: inherit;
 }
 
@@ -71,21 +67,20 @@
 .footer-socials {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 24px;
+  gap: 12px;
 }
 
 .footer-socials__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: inherit;
+  color: inherit;              /* щоб іконки брали той самий колір */
 }
 
 .footer-socials__icon {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
+  width: 20px;                 /* підстав точні значення з Figma */
+  height: 20px;
+  fill: currentColor;          /* колір з батьківського color */
 }
 
 /* ===== CREDITS (лінія + контакти + копірайт) – mobile ===== */
@@ -101,22 +96,17 @@
 }
 
 /* лінія */
-
 .footer__divider {
   width: 100%;
-  max-width: none;   
-  margin: 0;         
   height: 1px;
   background-color: rgba(0, 0, 0, 0.15);
 }
-
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  font-size: 14px;
+  gap: 8px;
 }
 
 .footer-contacts__link {
@@ -129,8 +119,7 @@
   opacity: 0.8;
 }
 
-/* копірайт */
-
+/* копірайт – єдиний текст 14px за коментом тімліда */
 .footer-copy {
   font-size: 14px;
   margin: 0;
@@ -146,7 +135,7 @@
   .footer__inner {
     max-width: 768px;
     padding: 0 32px;
-    gap: 24px;
+    gap: 24px;                 /* Figma: gap між блоками на tablet */
   }
 
   .footer__content {
@@ -157,6 +146,7 @@
     gap: 24px;
   }
 
+  /* меню в ряд */
   .footer-nav__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -181,59 +171,38 @@
 }
 
 /* ========= DESKTOP ≥1158px ========= */
+
 @media screen and (min-width: 1158px) {
   .footer {
     padding: 80px 0;
   }
 
   .footer__inner {
--   max-width: 1158px;
-+   max-width: 1312px;   /* як у макеті: 1440 - 2*64 */
+    max-width: 1158px;
     padding: 0 64px;
     gap: 52px;
   }
 
+  /* CONTENT: лого зліва, меню по центру, соцмережі справа */
   .footer__content {
-    display: flex;
+    flex-direction: row;
     align-items: center;
--   justify-content: center;
-+   justify-content: space-between;  /* три блоки: лого — меню — соцмережі */
     text-align: left;
-    gap: 24px;
-    padding: 0;
-    height: 80px;
+    gap: 32px;
   }
 
-  /* ЛОГО-БЛОК: така ж ширина, як у Figma (Logo frame 341px) */
-  .footer-logo {
--   flex-shrink: 0;
--   margin-right: auto;
-+   flex: 0 0 341px;          /* фіксована ширина блоку */
-+   display: flex;
-+   align-items: center;
-  }
-
-  /* МЕНЮ – по центру між лого та соцмережами */
   .footer-nav {
--   /* більше не тягнемо на всю ширину */
-+   flex: 0 1 auto;
-+   display: flex;
-+   justify-content: center;
+    flex: 1;
   }
 
   .footer-nav__list {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
   }
 
-  /* БЛОК СОЦМЕРЕЖ – теж 341px, щоб симетрія з логотипом */
   .footer-socials {
--   margin-left: auto;
--   justify-content: flex-end;
-+   flex: 0 0 341px;
-+   justify-content: flex-end;   /* іконки притиснуті вправо всередині блоку */
+    justify-content: flex-end;
   }
 
   .footer__credits {
