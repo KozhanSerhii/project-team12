@@ -7,7 +7,7 @@
     width: 288px;
 }
 .benefits-layout {
-    font-family: var(--font-family);
+    
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -16,7 +16,7 @@
     padding-bottom: 12px;
 }
 .title-layout {
-    
+    font-family: comfortaa, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -31,15 +31,28 @@
     color: #030A06;
     padding-bottom: 48px;
 }
-.ul-list-2img, .ul-list-1img {
+.ul-list-layout {
     display: flex;
     flex-direction: column;
+    gap: 48px;
 }
+.li-list-layout {
+    list-style: none;
+}
+
 .list-img-layout {
     border-radius: 32px;
     padding-bottom: 8px;
+    overflow: hidden;
+}
+.list-img-layout img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .list-title-layout {
+    font-family: comfortaa, sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.4;
@@ -51,7 +64,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    padding-bottom: 48px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -65,9 +78,10 @@
 .benefits-layout {
 padding-top: 64px;
 }
-.ul-list-2img {
-    flex-direction: row;
-    gap: 24px;
+
+.list-img-layout {
+    padding-bottom: 32px;
+    
 }
 .title-layout {
     padding-bottom: 24px;
@@ -76,13 +90,29 @@ padding-top: 64px;
     font-size: 18px;
     padding-bottom: 32px;
 }
+  .ul-list-layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+  }
+
+  .ul-list-layout > li:nth-child(-n + 2) {
+      width: calc(50% - 12px);
+  }
+
+
 
 .list-title-layout {
     padding-bottom: 8px;
 }
+.list-title-layout-strenght {
+    padding-bottom: 42px;
+}
 .list-description-layout {
     padding-bottom: 24px;
 }
+
 }
 @media screen and (min-width: 1440px) {
     .container {
@@ -99,10 +129,19 @@ padding-top: 64px;
 .benefits-description {
     padding-bottom: 80px;
 }
-.ul-list-layout {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+  .ul-list-layout {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 24px;
+  }
+    .ul-list-layout > li {
+      width: auto;
+      flex: 1; 
+  }
+.list-img-layout {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .list-title-layout {
     font-size: 32px;
