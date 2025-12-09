@@ -193,3 +193,19 @@ address a {
   text-decoration: none;
   font-family: 'Fira Sans', sans-serif;
 }
+.mobile-contact-link:active {
+  text-decoration: underline;
+  color: #75d281;
+}
+.mobile-contact-link:hover {
+  text-decoration: underline;
+  color: #030a06;
+}
+.mobile-link-navigation-list a:hover {
+  text-decoration: underline;
+  color: #030a06;
+}
+.mobile-link-navigation-list a:active {
+  text-decoration: underline;
+  color: #75d281;
+}
