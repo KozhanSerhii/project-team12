@@ -10,7 +10,7 @@
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         image-set(
-        url('../img/about/g-features-mobil.jpg') 1x,
+        url('../img/about/bg-features-mobil.jpg') 1x,
         url('../img/about/bg-features-mobil@2x.jpg') 2x
         );
 }
@@ -96,3 +96,4 @@
 }
 }
 /* #endregion about-section */
+
