@@ -1,3 +1,8 @@
+/* СЕКЦІЯ */
+.section {
+    padding: 32px 16px;
+}
+
 /* ЗАГОЛОВОК */
 .feedbacks-name-block {
     font-weight: 700;
@@ -6,6 +11,7 @@
     letter-spacing: 0.01em;
     text-align: center;
     margin-bottom: 32px;
+    font-family: "Comfortaa", sans-serif;
 }
 
 /* СПИСОК КАРТОК */
@@ -64,7 +70,12 @@
 }
 
 @media screen and (min-width: 768px) {
-      /* СПИСОК КАРТОК */
+    /* СЕКЦІЯ */
+    .feedbacks-section {
+        padding: 64px 32px;
+    }
+
+    /* СПИСОК КАРТОК */
     .feedbacks-client-list {
         display: flex; 
         flex-wrap: wrap;
@@ -94,6 +105,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+    /* СЕКЦІЯ */
+    .feedbacks-section {
+        padding: 64px;
+    }
+
      /* ЗАГОЛОВОК */
     .feedbacks-name-block {
         font-size: 48px;
