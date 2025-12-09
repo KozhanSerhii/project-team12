@@ -1,0 +1,144 @@
+/* СЕКЦІЯ */
+.section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* ЗАГОЛОВОК */
+.feedbacks-name-block {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* СПИСОК КАРТОК */
+.feedbacks-client-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feedbacks-item {
+    width: 100%;
+}
+
+/* КАРТКА ВСЕРЕДИНІ */
+.feedbacks-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* ЗІРКИ */
+.feedbacks-star-list {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.star-icon {
+    fill: #3AC04C;
+}
+
+.star-icon-without-color {
+    stroke: #3AC04C;
+    fill: #EBF8ED;
+    stroke-width: 2px;
+}
+
+/* ТЕКСТ ВІДГУКУ */
+.feedbacks-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    margin: 0 0 12px 0;
+    flex-grow: 1;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* АВТОР */
+.feedbacks-author {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    /* СЕКЦІЯ */
+    .section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    /* КОНТЕЙНЕР */
+    .container {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    /* СПИСОК КАРТОК */
+    .feedbacks-client-list {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 24px;
+    }
+
+    /* ОДИН КЛІЄНТ (li) */
+    .feedbacks-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* ЗІРКИ */
+    .feedbacks-star-list { 
+        margin-bottom: 24px;
+    }
+
+    /* КАРТКА ВСЕРЕДИНІ */
+    .feedbacks-card {
+        width: 100%;
+    }
+
+    /* ТЕКСТ ВІДГУКУ */
+    .feedbacks-text {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* КОНТЕЙНЕР */
+    .container {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+     /* ЗАГОЛОВОК */
+    .feedbacks-name-block {
+        font-size: 48px;
+        margin-bottom: 80px;
+    }
+
+    /* СПИСОК КАРТОК */
+    .feedbacks-client-list {
+        gap: 24px;
+    }
+
+    /* ОДИН КЛІЄНТ (li) */
+    .feedbacks-item {
+        width: calc((100% - 72px) / 4);
+    }
+}

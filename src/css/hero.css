@@ -1,0 +1,111 @@
+/* #region hero */
+.hero{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #EBF8ED;
+}
+.hero-main-div{
+
+}
+.main-title{
+	font-size: 40px;
+	line-height: 1.20;
+	letter-spacing: 0.01em;
+	color: #030a06;
+	margin-bottom: 20px;
+	font-family: "Comfortaa", sans-serif;
+}
+.hero-nested-div{
+
+}
+.hero-txt{
+	line-height: 1.6;
+	color: #030a06;
+	margin-bottom: 24px;
+}
+.btn-buy-now{
+	line-height: 1.6;
+	color: #fff;
+	background-color: #030a06;
+	border: 1px solid #030a06;
+	border-radius: 6px;
+	height: 50px;
+	display: inline-flex;
+	margin-bottom: 24px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-buy-now:hover,
+.btn-buy-now:focus{
+	opacity: 0.5;
+}
+.btn-buy-now:active{
+	opacity: 0.6;
+}
+.hero-picture{
+	display: block;
+	border-radius: 40px;
+    overflow: hidden;
+}
+.hero-img{
+    object-fit: cover;
+
+}
+@media screen and (min-width: 768px) {
+.hero{
+	padding-top: 32px;
+}
+.hero-main-div{
+	display: flex;
+	gap: 24px;
+}
+.main-title{
+	width: 340px;
+}
+.hero-nested-div{
+	width: 340px;
+}
+.hero-txt{
+	margin-bottom: 32px;
+	font-size: 18px;
+}
+.btn-buy-now{
+	width: 148px;
+}
+.hero-picture{
+
+}
+.hero-img{
+
+}
+}
+@media screen and (min-width: 1440px) {
+.hero{
+
+}
+.hero-main-div{
+	gap: 32px;
+}
+.main-title{
+	width: 640px;
+	font-size: 56px;
+}
+.hero-nested-div{
+	width: 640px;
+}
+.hero-txt{
+
+}
+.btn-buy-now{
+
+}
+.hero-picture{
+
+}
+.hero-img{
+
+}
+}
+/* #endregion hero */
