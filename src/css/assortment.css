@@ -1,3 +1,8 @@
+.assortment-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .assortment-title {
   font-family: comfortaa, sans-serif;
   font-weight: 700;
@@ -5,7 +10,6 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
-  margin-top: 64px;
   margin-bottom: 32px;
 }
 
@@ -63,13 +67,7 @@
   font-size: 16px;
   line-height: 1.6;
   background-color: transparent;
-  transition: opacity 250ms easy;
-}
-
-.assortment-btn:hover,
-.assortment-btn:focus {
-  opacity: 0.5;
-  cursor: pointer;
+  transition: opacity 250ms easy, color 250ms easy, border-color 250ms easy;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,19 +91,31 @@
 @media screen and (min-width: 1440px) {
   .assortment-list {
     flex-direction: row;
-    row-gap: 64px;}
-
-    .assortment-item {
-      width: calc((100% - 72px) / 4);
-    }
-
-    .assortment-item:nth-child(5) .assortment-price,
-    .assortment-item:nth-child(8) .assortment-price {
-      margin-bottom: 27px;
-    }
-    .assortment-item:nth-child(5) img,
-    .assortment-item:nth-child(8) img {
-      margin-bottom: 27px;
-    }
+    row-gap: 64px;
   }
 
+  .assortment-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .assortment-item:nth-child(5) .assortment-price,
+  .assortment-item:nth-child(8) .assortment-price {
+    margin-bottom: 27px;
+  }
+  .assortment-item:nth-child(5) img,
+  .assortment-item:nth-child(8) img {
+    margin-bottom: 27px;
+  }
+
+  .assortment-btn:hover,
+  .assortment-btn:focus {
+    opacity: 0.5;
+    color: #030a06;
+  }
+
+  .assortment-btn:active {
+    border-color: #113916;
+    opacity: 0.6;
+    color: #113916;
+  }
+}
