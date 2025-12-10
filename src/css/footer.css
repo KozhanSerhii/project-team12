@@ -182,7 +182,6 @@
   .footer-socials {
     justify-content: center;
     /* (в макеті та ж відстань, що й на десктопі) */
-    gap: 24px;
   }
 
   /* tablet: іконки 40 × 40 */
