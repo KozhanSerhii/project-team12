@@ -1,0 +1,293 @@
+/* ========= FOOTER: MOBILE-FIRST ========= */
+
+.footer {
+  width: 100%;
+  background-color: #75D281;
+  /* верхній та нижній падінг  48px */
+  padding: 48px 0;
+}
+
+.footer__inner {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  /* проміжок між CONTENT і CREDITS = 48px */
+  gap: 48px;
+}
+
+/* ===== CONTENT (logo + menu + socials) – mobile ===== */
+
+.footer__content {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* проміжки між лого / навігацією / соцмережами = 48px */
+  gap: 48px;
+}
+
+/* LOGO – mobile: 280 × 121 */
+.footer-logo__img {
+  display: block;
+  width: 280px;
+  height: 121px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* MENU */
+
+.footer-nav__list,
+.footer-socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  /* проміжок між пунктами навігації = 32px */
+  gap: 32px;
+}
+
+/* властивості посилань навігації під макет */
+.footer-nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #111827;
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* SOCIALS */
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  /* проміжок між соцмережами = 12px */
+  gap: 12px;
+}
+
+.footer-socials__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.footer-socials__icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+/* ===== CREDITS (line + contacts + copyright) – mobile ===== */
+
+.footer__credits {
+  width: 100%;
+  /* від соцмереж до лінії — керується gap у .footer__inner (48px) */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* між лінією, контактами і копірайтом = 24px */
+  gap: 24px;
+}
+
+/* line */
+.footer__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* між контактами (телефон / email) = 16px */
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* властивості контактів під макет */
+.footer-contacts__link {
+  text-decoration: none;
+  color: #111827;
+}
+
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
+  opacity: 0.8;
+}
+
+/* копірайт */
+.footer-copy {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ========= TABLET ≥768px ========= */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    /* верхній/нижній падінг для планшету = 64px */
+    padding: 64px 0;
+  }
+
+  .footer__inner {
+    max-width: 768px;
+    padding: 0 32px;
+    /* між CONTENT і CREDITS в макеті ~24px  */
+    gap: 24px;
+  }
+
+  .footer__content {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* проміжки між лого / навігацією / соцмережами = 32px */
+    gap: 32px;
+  }
+
+  /* logo tablet: ~164 × 70 */
+  .footer-logo__img {
+    width: 164px;
+    height: 70px;
+  }
+
+  .footer-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* проміжки між пунктами навігації = 32px */
+  }
+
+  .footer-socials {
+    justify-content: center;
+    /* (в макеті та ж відстань, що й на десктопі) */
+  }
+
+  /* tablet: іконки 40 × 40 */
+  .footer-socials__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__credits {
+    /* проміжок між лінією і контактами = 16px,
+       між контактами і копірайтом теж 16px */
+    gap: 16px;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+/* ========= DESKTOP ≥1440px ========= */
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 80px 0;                /* 80px зверху і знизу */
+  }
+
+  .footer__inner {
+    max-width: 1440px;
+    padding: 0 64px;
+    gap: 24px;                      /* між content і credits */
+  }
+
+  /* CONTENT: logo left, nav center, socials right */
+  .footer__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .footer-logo {
+    flex-shrink: 0;
+  }
+
+  /* лого як у макеті на десктопі */
+  .footer-logo__img {
+    width: 164px;
+    height: 70px;
+  }
+
+  /* навігація по центру */
+  .footer-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;                      /* між пунктами меню */
+  }
+
+  /* соцмережі праворуч */
+  .footer-socials {
+    justify-content: flex-end;
+  }
+
+  .footer-socials__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ===== CREDITS ===== */
+
+  .footer__credits {
+    padding-top: 24px;              /* від контенту до лінії */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;                      /* між контактами та копірайтом */
+  }
+
+  .footer__divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;                      /* між телефоном та email */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-copy {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+

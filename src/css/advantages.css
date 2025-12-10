@@ -1,0 +1,128 @@
+.layout-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.benefits-layout {
+     margin-bottom: 12px;
+}
+.title-layout {
+    font-family: comfortaa, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+.benefits-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+.ul-list-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+
+.list-img-layout {
+    border-radius: 32px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.list-img-layout img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.list-title-layout {
+    font-family: comfortaa, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+     margin-bottom: 4px;
+}
+.list-description-layout {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+@media screen and (min-width: 768px) {
+
+.container-advantages {
+    width: 704px;
+}
+.layout-section {
+padding-top: 64px;
+padding-bottom: 64px;
+}
+
+.list-img-layout {
+    margin-bottom: 32px;
+    
+}
+.title-layout {
+    margin-bottom: 24px;
+}
+.benefits-description {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+  .ul-list-layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+  }
+
+  .ul-list-layout > li:nth-child(-n + 2) {
+      width: calc(50% - 12px);
+  }
+
+
+
+.list-title-layout {
+    margin-bottom: 8px;
+}
+.list-title-layout-strenght {
+    margin-bottom: 42px;
+}
+
+
+}
+@media screen and (min-width: 1440px) {
+
+.container-advantages {
+    width: 768px;
+}
+.title-layout  {
+    font-weight: 700;
+    font-size: 48px;
+}
+.benefits-description {
+    margin-bottom: 80px;
+}
+  .ul-list-layout {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 24px;
+  }
+    .ul-list-layout > li {
+      width: auto;
+      flex: 1; 
+  }
+.list-img-layout {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list-title-layout {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+}
