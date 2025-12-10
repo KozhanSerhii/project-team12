@@ -13,6 +13,7 @@
         url('/img/about/bg-features-mobil.jpg') 1x,
         url('/img/about/bg-features-mobil@2x.jpg') 2x
         );
+    aspect-ratio: 320 / 348;
 }
 .tagline {
     font-family: "Fira Sans", sans-serif;
@@ -60,6 +61,7 @@
       url('/img/about/bg-features-tablet.jpg') 1x,
       url('/img/about/bg-features-tablet@2x.jpg') 2x
     );
+    aspect-ratio: 768 / 325; 
 }
 
 .tagline {
@@ -89,6 +91,7 @@
       url('/img/about/bg-features.jpg') 1x,
       url('/img/about/bg-features@2x.jpg') 2x
     );  
+    aspect-ratio: 1440 / 642;
    
 }
 .feature-title {
