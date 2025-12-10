@@ -67,7 +67,7 @@
   font-size: 16px;
   line-height: 1.6;
   background-color: transparent;
-  transition: opacity 250ms easy, color 250ms easy, border-color 250ms easy;
+  transition: opacity 250ms ease, color 250ms ease, border-color 250ms ease;
 }
 
 @media screen and (min-width: 768px) {
