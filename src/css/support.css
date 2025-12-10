@@ -1,0 +1,238 @@
+.support {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .support {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .support-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-height: 767px;
+  }
+}
+
+.support-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .support-title-wrapper {
+    width: 644px;
+  }
+}
+
+.support-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  max-width: 288px;
+}
+
+@media screen and (min-width: 768px) {
+  .support-title {
+    max-width: 468px;
+  }
+}
+
+.support-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.support-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .support-form {
+    max-width: 644px;
+  }
+}
+
+.support-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-input-label {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.support-input {
+  max-width: 288px;
+  height: 42px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  background: rgba(3, 10, 6, 0.05);
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  border-radius: 6px;
+  padding: 8px 12px;
+  max-width: 288px;
+  height: 42px;
+  outline: transparent;
+}
+
+.support-input:not(:placeholder-shown):invalid {
+  border: 1px solid #d64040;
+  color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):valid {
+  border: 1px solid rgba(3, 10, 6, 0.15);
+}
+
+.text-valid,
+.text-invalid {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  display: none;
+}
+
+.text-invalid {
+  color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.support-message {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  border-radius: 6px;
+  padding: 12px;
+  max-width: 288px;
+  height: 180px;
+  background: rgba(3, 10, 6, 0.05);
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  outline: transparent;
+}
+
+.support-input::placeholder,
+.support-message::placeholder {
+  color: rgba(3, 10, 6, 0.6);
+}
+
+.support-input:hover::placeholder,
+.support-input:focus::placeholder,
+.support-message:hover::placeholder,
+.support-message:focus::placeholder {
+  color: #030a06;
+}
+
+@media screen and (min-width: 768px) {
+  .support-input,
+  .support-message {
+    max-width: 704px;
+  }
+}
+
+.support-btn {
+  display: block;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  max-width: 288px;
+  height: 50px;
+  background: #030a06;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.support-btn:hover,
+.support-btn:focus {
+  opacity: 0.5;
+}
+
+.support-btn:active {
+  border: 1px solid #113916;
+  background: #113916;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .support-btn {
+    max-width: 249px;
+  }
+}
+
+.support-image {
+  background-image: url(/img/support-section/shoper-on-the-table-p@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: cover;
+  border-radius: 40px;
+  max-width: 288px;
+  height: 428px;
+}
+
+@media (min-resolution: 192dpi) {
+  .support-image {
+    background-image: url(/img/support-section/shoper-on-the-table-p@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .support-image {
+    max-width: 704px;
+    height: 428px;
+    background-image: url(/img/support-section/shoper-on-the-table-t@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .support-image {
+    background-image: url(/img/support-section/shoper-on-the-table-t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .support-image {
+    width: 644px;
+    height: 767px;
+    background-image: url(/img/support-section/shoper-on-the-table-pc@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .support-image {
+    background-image: url(/img/support-section/shoper-on-the-table-pc@2x.jpg);
+  }
+}
