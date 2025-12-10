@@ -91,6 +91,12 @@
   width: 32px;
   height: 32px;
   fill: currentColor;
+  transition: opacity 0.25s ease;
+}
+
+.footer-socials__link:hover .footer-socials__icon,
+.footer-socials__link:focus .footer-socials__icon {
+  opacity: 0.7;
 }
 
 /* ===== CREDITS (line + contacts + copyright) – mobile ===== */
