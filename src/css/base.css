@@ -2,6 +2,10 @@
     ЗАГОЛОВКИ - font-family: "Comfortaa",sans-serif; 
     Перевіряйте завжди!!! */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: #EBF8ED;

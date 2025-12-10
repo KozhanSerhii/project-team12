@@ -29,7 +29,8 @@
 .nav-link {
   font-weight: 400;
   font-size: 16px;
-  line-height: 160%;
+  padding: 15px 0;
+  line-height: 1.6;
   color: #030a06;
   text-decoration: none;
 }

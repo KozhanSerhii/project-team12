@@ -113,6 +113,8 @@
   font-size: 12px;
   line-height: 1.6;
   display: none;
+  position: absolute;
+  margin-top: 80px;
 }
 
 .text-invalid {
